@@ -6,7 +6,7 @@ from collections import defaultdict
 import sys, re, math, os, argparse
 
 # Define arguments for the script
-parser = argparse.ArgumentParser(description='Generate text to speech for the specified Wwise object ID.')
+parser = argparse.ArgumentParser(description='Auto-fill midimap based on object name')
 parser.add_argument('id', metavar='GUID', nargs='?', help='One guid of the form {01234567-89ab-cdef-0123-4567890abcde}. The script retrieves the current selected if no GUID specified.')
 
 args = parser.parse_args()
